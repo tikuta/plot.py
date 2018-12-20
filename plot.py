@@ -84,7 +84,7 @@ if __name__ == '__main__':
     for f in args.input:
         params = f.split(':')
 
-        label, filepath, color = None, f, None
+        label, filepath, color = f, f, None
         if len(params) == 2:
             if os.path.isfile(params[0]):
                 filepath, color = params
